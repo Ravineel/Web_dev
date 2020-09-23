@@ -2,11 +2,13 @@ body{
     margin: 0px;
 }
 .container{
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
+   
 }
+
 
 h1{
     font-family: Aladin;
@@ -28,5 +30,6 @@ img{
 
 img:hover{
     transform: scale(1.1);
+   
    
 }
