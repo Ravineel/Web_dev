@@ -40,6 +40,9 @@ a{
         font-size: 0.5em;
         padding: 0;
     }
+     .container{
+        height: 15vh;
+    }
 }
 
 .push{
@@ -47,6 +50,37 @@ a{
 }
 
 
+.container{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+}
+
+
+.grid_wrapper{
+
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+}
+
+.box>img{
+    width: 100%;
+
+}
+
+.box{
+    background-color: #444;
+    padding: 120px;
+    margin: 20px;
+}
+
+footer{
+    text-align: center;
+}
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
