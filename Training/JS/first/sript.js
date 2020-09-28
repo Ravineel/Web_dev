@@ -25,6 +25,7 @@ sing("Blah blah blah")
 
 function multiply(a,b){
     console.log(a,b);
-    console.log(a*b);
+    return a*b;
+    
 }
 multiply(5,10);
