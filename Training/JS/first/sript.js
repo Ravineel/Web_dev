@@ -20,3 +20,11 @@ function sing( song ){
 sing("laaa deee daaa");
 sing("Hellooooo");
 sing("Blah blah blah")
+
+
+
+function multiply(a,b){
+    console.log(a,b);
+    console.log(a*b);
+}
+multiply(5,10);
