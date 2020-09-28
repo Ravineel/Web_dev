@@ -32,5 +32,4 @@ false - true
 true === false
 true != true
 
-
 // Make the string: "Hi There! It's "sunny" out" by using the + sign:
