@@ -52,12 +52,6 @@ else{
         alert("sorry, wrong username or password")
     }
 
-
-    // if (user === database[0].username && pass === database[0].password)
-    //     {
-    //             
-    //     }
-    // 
 }
 
 signin(userNamePrompt,passwordPrompt);
