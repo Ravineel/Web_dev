@@ -68,7 +68,7 @@ const newScore = array.reduce((sum,user)=>{
 },0);
 console.log(newScore);
 
-// (1), what is the value of i?
+// (1), what is the value of i? //index
 // (2), Make this map function pure:
 const arrayNum = [1, 2, 4, 5, 8, 9];
 const newArray = arrayNum.map((num, i) => {
@@ -77,4 +77,17 @@ const newArray = arrayNum.map((num, i) => {
 	return num * 2;
 })
 
+const newArray1 = array.map((num,i)=>{
+  return num*2
+});
+
+
 //BONUS: create a new list with all user information, but add "!" to the end of each items they own.
+
+
+const newList = array.map((user)=>{
+  let {username, team, score, items} = user
+  items =  items.map(it=>it+'!');
+  return {username,team,score,items};
+}); 
+console.log(newList)
