@@ -3,6 +3,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import './App.css'
 import Scroll from '../components/Scroll';
+import ErrorBoundry from '../components/ErrorBoundry';
 
 class App extends Component {
 
@@ -33,14 +34,16 @@ class App extends Component {
             return robot.name.toLowerCase().includes(searchfield.toLowerCase());
         });
 
-        return !robots.legth?
+        return robots.legth?
         <h1>Loading</h1> : 
         (
             <div className='tc'>
                 <h1 className='f2'>RoboFriends</h1>
                 <SearchBox searchChange={this.onSearchChange}  />
                 <Scroll>
-                    <CardList robots={filteredRobots}/>
+                    <ErrorBoundry>
+                        <CardList robots={filteredRobots}/>
+                    </ErrorBoundry>
                 </Scroll>
             </div>
         );
